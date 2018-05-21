@@ -13,7 +13,7 @@
 - (UILabel *(^)(UIFont *f))rl_font
 {
     return ^(UIFont *f) {
-        self.font = f;
+        [self setFont:f];
         return self;
     };
 }
@@ -21,7 +21,7 @@
 - (UILabel *(^)(NSString *t))rl_text
 {
     return ^(NSString *t) {
-        self.text = t;
+        [self setText:t];
         return self;
     };
 }
@@ -29,7 +29,7 @@
 - (UILabel *(^)(UIColor *c))rl_textColor
 {
     return ^(UIColor *c) {
-        self.textColor = c;
+        [self setTextColor:c];
         return self;
     };
 }
@@ -37,7 +37,7 @@
 - (UILabel *(^)(NSInteger n))rl_numberOfLines
 {
     return ^(NSInteger n) {
-        self.numberOfLines = n;
+        [self setNumberOfLines:n];
         return self;
     };
 }
@@ -45,7 +45,7 @@
 - (UILabel *(^)(NSTextAlignment x))rl_textAlignment
 {
     return ^(NSTextAlignment x) {
-        self.textAlignment = x;
+        [self setTextAlignment:x];
         return self;
     };
 }
