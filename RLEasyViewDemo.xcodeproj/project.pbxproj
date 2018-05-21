@@ -42,6 +42,7 @@
 		18A113A620B2B14A00E23D02 /* UITextField+RLEasy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+RLEasy.m"; sourceTree = "<group>"; };
 		18A113A720B2B14A00E23D02 /* UIImageView+RLEasy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RLEasy.m"; sourceTree = "<group>"; };
 		18A113A820B2B14A00E23D02 /* UIView+RLEasy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RLEasy.h"; sourceTree = "<group>"; };
+		18A113AE20B2BCAB00E23D02 /* PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,7 @@
 				18A1139220B2B0F000E23D02 /* LaunchScreen.storyboard */,
 				18A1139520B2B0F000E23D02 /* Info.plist */,
 				18A1139620B2B0F000E23D02 /* main.m */,
+				18A113AE20B2BCAB00E23D02 /* PrefixHeader.h */,
 			);
 			path = RLEasyViewDemo;
 			sourceTree = "<group>";
@@ -324,6 +326,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RLEasyViewDemo/PrefixHeader.h";
 				INFOPLIST_FILE = RLEasyViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -341,6 +345,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RLEasyViewDemo/PrefixHeader.h";
 				INFOPLIST_FILE = RLEasyViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (

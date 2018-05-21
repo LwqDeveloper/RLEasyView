@@ -9,7 +9,6 @@
 #ifndef RLEasyView_h
 #define RLEasyView_h
 
-#import <UIKit/UIKit.h>
 #import "UIView+RLEasy.h"
 #import "UILabel+RLEasy.h"
 #import "UIButton+RLEasy.h"
