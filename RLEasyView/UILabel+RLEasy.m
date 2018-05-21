@@ -61,7 +61,7 @@
 - (UILabel *(^)(BOOL b))rl_enabled
 {
     return ^(BOOL b) {
-        self.enabled = b;
+        [self setEnabled:b];
         return self;
     };
 }
